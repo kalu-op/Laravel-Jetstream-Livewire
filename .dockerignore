@@ -1,0 +1,10 @@
+.git
+.gitignore
+docker
+README.md
+.DS_Store
+# frontend
+/tmp/*
+*.csv
+vendor/
+node_modules/
