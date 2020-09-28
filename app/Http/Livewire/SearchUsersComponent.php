@@ -1,4 +1,5 @@
 <?php
+namespace App\Http\Livewire;
 
 use App\Models\User;
 use Livewire\Component;
@@ -9,8 +10,8 @@ class SearchUsersComponent extends Component
 
     public function render()
     {
-        return view('livewire.search-users-component', [
-            'users' => User::where('username', $this->search)->get(),
+        return view('livewire.search-users', [
+            'users' => User::where('name', $this->search)->get(),
         ]);
     }
 }

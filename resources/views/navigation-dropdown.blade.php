@@ -22,6 +22,12 @@
                         {{ __('Utilisateurs') }}
                     </x-jet-nav-link>
                 </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ml-4 sm:flex">
+                    <x-jet-nav-link href="/contacts" :active="request()->routeIs('contacts')">
+                        {{ __('Contacts') }}
+                    </x-jet-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->

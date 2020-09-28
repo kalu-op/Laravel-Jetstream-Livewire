@@ -25,4 +25,8 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::get('/users', function() {
         return view('users.index');
     })->name('users');
+
+    Route::get('/contacts', function() {
+        return view('contacts.index');
+    })->name('contacts');
 });
